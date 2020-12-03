@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "43516075002",
+    "firebase_url": "https://smartcart-184ed.firebaseio.com",
+    "project_id": "smartcart-184ed",
+    "storage_bucket": "smartcart-184ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43516075002:android:4fafa8c0be3c8b0441e243",
+        "android_client_info": {
+          "package_name": "com.example.foodquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43516075002-m0q7doh2jquv5j59m3j4j78pjtass3sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqiRhbbJl9TYMBsXk268IHrs68RgaSktY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43516075002-m0q7doh2jquv5j59m3j4j78pjtass3sv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

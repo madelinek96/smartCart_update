@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar2" type="id"></item>
+    <item name="imageButton" type="id"></item>
+    <item name="proBtn" type="id"></item>
+    <item name="login_progressBar" type="id"></item>
+    <item name="register_progressbar" type="id"></item>
+    <item name="showProfileName" type="id"></item>
+    <item name="showProfileEmail" type="id"></item>
+    <item name="twoToThreeTimes" type="id"></item>
+    <item name="oneToTwoTimes" type="id"></item>
+    <item name="moreThanThreeTimes" type="id"></item>
+    <item name="neverMeat" type="id"></item>
+    <item name="nextButton" type="id"></item>
+    <item name="howOftenDairy" type="id"></item>
+    <item name="oneToTwoTimes2" type="id"></item>
+    <item name="neverDairyDontLike" type="id"></item>
+    <item name="neverDairyLactoseInt" type="id"></item>
+    <item name="moreThanThreeTimes2" type="id"></item>
+    <item name="twoToThreeTimes2" type="id"></item>
+    <item name="neverDairyVegan" type="id"></item>
+    <item name="backButton2" type="id"></item>
+</resources>

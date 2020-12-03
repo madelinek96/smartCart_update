@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuprofileicon"
+        android:icon="@drawable/profileicon"
+        android:title="Profile"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menuhome"
+        android:icon="@drawable/houseicon"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/menurecipe"
+        android:icon="@drawable/recipeicon"
+        android:title="Recipes"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menumealplan"
+        android:icon="@drawable/mealplanicon"
+        android:title="Meal Plan"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menusubscribe"
+        android:title="Subscribe to Pro"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menulogout"
+        android:title="Log Out"
+        app:showAsAction="never"/>
+
+
+</menu>
