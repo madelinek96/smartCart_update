@@ -14,81 +14,92 @@
     tools:context=".QuizActivityDiet">
 
 
-    <RadioButton
-        android:id="@+id/twoToThreeTimes"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Two to three times per week"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="261dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="248dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <RadioButton
-        android:id="@+id/neverMeatImVegan"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Never - I'm Vegan/Vegetarian/Pescatarian"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
 
-    <RadioButton
-        android:id="@+id/neverMeatDontLike"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Never - I don't like red meat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        <RadioButton
+            android:id="@+id/oneToTwoTimes"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="One to two times per week"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.47000003" />
 
-    <RadioButton
-        android:id="@+id/moreThanThreeTimes"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="More than three times per week"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.609" />
+        <RadioButton
+            android:id="@+id/twoToThreeTimes"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Two to three times per week"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.542" />
 
-    <RadioButton
-        android:id="@+id/oneToTwoTimes"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="One to two times per week"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47000003" />
+        <RadioButton
+            android:id="@+id/moreThanThreeTimes"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="More than three times per week"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.609" />
 
+        <RadioButton
+            android:id="@+id/neverMeatImVegan"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Never - I'm Vegan/Vegetarian/Pescatarian"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.68" />
+
+
+        <RadioButton
+            android:id="@+id/neverMeatDontLike"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Never - I don't like red meat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/section1Diet"
         android:layout_width="181dp"
-        android:layout_height="48dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
         android:text="Section 1: Diet"
         android:textColor="#231F20"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/selectOne"
@@ -101,12 +112,12 @@
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintVertical_bias="0.31" />
 
     <TextView
         android:id="@+id/howOftenMeat"
-        android:layout_width="330dp"
-        android:layout_height="84dp"
+        android:layout_width="319dp"
+        android:layout_height="166dp"
         android:text="How often do you eat meat? Red meat includes beef, lamb, pork, veal, venison, goat, etc."
         android:textColor="#231F20"
         android:textSize="22sp"
@@ -116,21 +127,21 @@
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <Button
-    android:id="@+id/nextButton"
-    android:layout_width="106dp"
-    android:layout_height="36dp"
-    android:background="#767B9F"
-    android:text="Next"
-    android:textColor="#FFF"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.947"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.95" />
+        android:id="@+id/nextButton"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:background="#767B9F"
+        android:text="Next"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
     <Button
         android:id="@+id/backButton"

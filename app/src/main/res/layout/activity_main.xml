@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/homepage_welcome" />
+        app:srcCompat="@drawable/homepage_welcomeupdated" />
 
     <TextView
         android:id="@+id/textView"
@@ -34,10 +34,10 @@
         android:id="@+id/takeFoodQuiz"
         android:layout_width="128dp"
         android:layout_height="45dp"
-        android:background="#FFFFFF"
+        android:background="#FFF"
         android:text="Take Food Quiz"
         android:textAllCaps="false"
-        android:textColor="#B3BAF6"
+        android:textColor="#424E8F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"

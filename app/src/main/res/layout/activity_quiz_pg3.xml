@@ -17,7 +17,7 @@
         android:id="@+id/selectAllThatApplyText"
         android:layout_width="345dp"
         android:layout_height="66dp"
-        android:text="Select all that apply to your diet."
+        android:text="Select what applies to your diet."
         android:textColor="#231F20"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -43,89 +43,66 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <CheckBox
-        android:id="@+id/watchingMyWeight"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="I am watching my weight to better my overall health"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
 
-    <CheckBox
-        android:id="@+id/imVegetarian"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="I am Vegetarian"
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="237dp"
+        android:layout_height="181dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintVertical_bias="0.518">
 
-    <CheckBox
-        android:id="@+id/healthIssues"
-        android:layout_width="244dp"
-        android:layout_height="63dp"
-        android:text="I have health issues like Diabetes or Heart Disease and need to manage them through diet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
 
-    <CheckBox
-        android:id="@+id/followDiet"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="I follow a specific diet like Keto or Weight Watchers"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606" />
+        <RadioButton
+            android:id="@+id/imVegan"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="I am Vegan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.373" />
 
-    <CheckBox
-        android:id="@+id/noDiet"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="I have no restrictions and do not follow a diet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        <RadioButton
+            android:id="@+id/imVegetarian"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="I am Vegetarian"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.431" />
 
-    <CheckBox
-        android:id="@+id/imPescatarian"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="I am Pescatarian"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
+        <RadioButton
+            android:id="@+id/imPescatarian"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="I am Pescatarian"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
 
-    <CheckBox
-        android:id="@+id/imVegan"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="I am Vegan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
+        <RadioButton
+            android:id="@+id/noDiet"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="I have no restrictions and do not follow a diet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.553" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/nextButton3"
@@ -154,6 +131,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

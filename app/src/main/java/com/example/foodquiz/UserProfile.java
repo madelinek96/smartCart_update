@@ -1,5 +1,6 @@
 package com.example.foodquiz;
 
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -48,12 +49,13 @@ import com.squareup.picasso.Picasso;
 import java.util.HashMap;
 import java.util.Map;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class UserProfile extends AppCompatActivity {
     TextView fullName;
     TextView email;
     EditText pPassword;
     ImageView profileImage;
-    ProgressBar progressBar;
     Button editProfile;
     Button changePassword;
     Button updateFoodQuiz;
@@ -63,6 +65,7 @@ public class UserProfile extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference databaseReference;
     DocumentReference documentReference;
+    FirebaseStorage firebaseStorage;
     String userID;
     FirebaseAuth mAuth;
     FirebaseUser firebaseUser;
@@ -72,11 +75,10 @@ public class UserProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showprofile);
 
-        profileImage = findViewById(R.id.userProfile);
+        profileImage = findViewById(R.id.profileImage);
         fullName = findViewById(R.id.displayName);
         pPassword = findViewById(R.id.password);
         email = findViewById(R.id.displayEmail);
-        progressBar = findViewById(R.id.profileProgressBar);
         editProfile = findViewById(R.id.btnEditProfile);
         changePassword = findViewById(R.id.btnChangePassword);
         updateFoodQuiz = findViewById(R.id.btnUpdateFoodQuiz);
@@ -86,17 +88,22 @@ public class UserProfile extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
+
+
         userID = mAuth.getInstance().getCurrentUser().getUid();
 
 
         //loading the profile picture up for the user
-        StorageReference profileRef = storageReference.child("users/"+ mAuth.getCurrentUser().getUid());
-        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                Picasso.get().load(uri).into(profileImage);
-            }
-        });
+        StorageReference profileRef = storageReference.child("gs://smartcart-184ed.appspot.com/users/");
+                        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                Picasso.get().load(uri).into(profileImage);
+                            }
+                        });
+
+
+
 
         //referencing that user and showing their profile
             documentReference = fStore.collection("users").document(userID);
@@ -105,7 +112,7 @@ public class UserProfile extends AppCompatActivity {
                 public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
                     if (documentSnapshot == null) {
                         Log.i("Error", error.toString());
-                        Toast.makeText(UserProfile.this, "Document doesnt exist", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(UserProfile.this, "Document doesn't exist", Toast.LENGTH_SHORT).show();
                     } else {
                         fullName.setText(documentSnapshot.getString("fullname"));
                         email.setText(documentSnapshot.getString("email"));
@@ -114,7 +121,7 @@ public class UserProfile extends AppCompatActivity {
                 }
             });
 
-        //editing profile
+        //taking us to editing profile
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,7 +132,7 @@ public class UserProfile extends AppCompatActivity {
             }
         });
 
-        //changing password
+        //taking us to changing password
         changePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -134,6 +141,20 @@ public class UserProfile extends AppCompatActivity {
                 finish();
             }
         });
+
+
+        //taking us to edit the food quiz
+        updateFoodQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserProfile.this,QuizWelcomeDisplay.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+
 
         //deleting account
         deleteAcc.setOnClickListener(new View.OnClickListener() {
@@ -146,11 +167,11 @@ public class UserProfile extends AppCompatActivity {
                 dialog.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        progressBar.setVisibility(View.VISIBLE);
+
                         firebaseUser.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-                                progressBar.setVisibility(View.GONE);
+
                                 if(task.isSuccessful()){
                                     //user is deleted
                                     Toast.makeText(getApplicationContext(),"Account Deleted.",Toast.LENGTH_LONG).show();

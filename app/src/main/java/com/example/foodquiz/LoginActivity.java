@@ -115,7 +115,7 @@ protected void onStart(){
         }
 }
 private void sendtoMain(){
-    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+    Intent intent = new Intent(LoginActivity.this, HomeAfterFQ.class);
     startActivity(intent);
     finish();
 }

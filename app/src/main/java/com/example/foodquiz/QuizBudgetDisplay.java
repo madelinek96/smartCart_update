@@ -10,21 +10,21 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class QuizPreferencesDisplay extends AppCompatActivity {
+public class QuizBudgetDisplay extends AppCompatActivity {
 
-    Button goToSection2;
+    Button tapToBegin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quizpreferencesdisplay);
+        setContentView(R.layout.activity_quizbudgetdisplay);
 
-        goToSection2 = findViewById(R.id.tapHereToStart2);
+        tapToBegin = findViewById(R.id.tapHereToStart6);
 
-        goToSection2.setOnClickListener(new View.OnClickListener() {
+        tapToBegin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuizPreferencesDisplay.this, QuizActivityPreferences.class);
+                Intent intent = new Intent(QuizBudgetDisplay.this, BudgetActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -51,5 +51,6 @@ public class QuizPreferencesDisplay extends AppCompatActivity {
         }
 
     }
+
 
 }

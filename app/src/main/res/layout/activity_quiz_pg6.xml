@@ -14,22 +14,156 @@
     tools:context=".QuizActivityDiet">
 
 
-    <RadioButton
-        android:id="@+id/tenToThirty"
-        android:layout_width="207dp"
-        android:layout_height="46dp"
-        android:text="10 - 30 minutes"
+    <RadioGroup
+        android:id="@+id/breakfastRadioGroup"
+        android:layout_width="243dp"
+        android:layout_height="102dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.32">
+
+        <RadioButton
+            android:id="@+id/zeroToTen"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="0 - 10 minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.369" />
+
+        <RadioButton
+            android:id="@+id/tenToThirty"
+            android:layout_width="207dp"
+            android:layout_height="46dp"
+            android:text="10 - 30 minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37" />
+
+        <RadioButton
+            android:id="@+id/thirtyToFifty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 - 50+ minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.434" />
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/lunchRadioGroup"
+        android:layout_width="243dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57">
+
+        <RadioButton
+            android:id="@+id/zeroToTen2"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="0 - 10 minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.369" />
+
+        <RadioButton
+            android:id="@+id/tenToThirty2"
+            android:layout_width="207dp"
+            android:layout_height="46dp"
+            android:text="10 - 30 minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37" />
+
+        <RadioButton
+            android:id="@+id/thirtyToFifty2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 - 50+ minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.434" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/dinnerRadioGroup"
+        android:layout_width="243dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82">
+
+        <RadioButton
+            android:id="@+id/zeroToTen3"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="0 - 10 minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.369" />
+
+        <RadioButton
+            android:id="@+id/tenToThirty3"
+            android:layout_width="207dp"
+            android:layout_height="46dp"
+            android:text="10 - 30 minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37" />
+
+        <RadioButton
+            android:id="@+id/thirtyToFifty3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 - 50+ minutes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.434" />
+    </RadioGroup>
+
 
     <TextView
         android:id="@+id/section4PrepTime"
-        android:layout_width="202dp"
-        android:layout_height="51dp"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
         android:text="Section 4: Prep Time Preference"
         android:textColor="#231F20"
         android:textSize="22sp"
@@ -44,47 +178,24 @@
 
     <TextView
         android:id="@+id/dinner"
-        android:layout_width="320dp"
-        android:layout_height="33dp"
+        android:layout_width="190dp"
+        android:layout_height="36dp"
         android:text="Dinner"
         android:textColor="#231F20"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
+        app:layout_constraintVertical_bias="0.68" />
 
-    <RadioButton
-        android:id="@+id/zeroToTen"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="0 - 10 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369" />
-
-    <RadioButton
-        android:id="@+id/thirtyToFifty"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="30 - 50 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
 
     <TextView
         android:id="@+id/breakfast"
-        android:layout_width="320dp"
-        android:layout_height="33dp"
+        android:layout_width="176dp"
+        android:layout_height="35dp"
         android:text="Breakfast"
         android:textColor="#231F20"
         android:textSize="18sp"
@@ -94,23 +205,12 @@
         app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintVertical_bias="0.23000002" />
 
-    <RadioButton
-        android:id="@+id/thirtyToFifty2"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="30 - 50 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606" />
 
     <TextView
         android:id="@+id/lunch"
-        android:layout_width="320dp"
+        android:layout_width="181dp"
         android:layout_height="33dp"
         android:text="Lunch"
         android:textColor="#231F20"
@@ -118,71 +218,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491" />
+        app:layout_constraintVertical_bias="0.45" />
 
-    <RadioButton
-        android:id="@+id/zeroToTen2"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="0 - 10 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547" />
-
-    <RadioButton
-        android:id="@+id/thirtyToFifty3"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="30 - 50 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
-
-    <RadioButton
-        android:id="@+id/zeroToTen3"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="0 - 10 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719" />
-
-
-    <RadioButton
-        android:id="@+id/tenToThirty2"
-        android:layout_width="200dp"
-        android:layout_height="43dp"
-        android:text="10 - 30 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
-
-    <RadioButton
-        android:id="@+id/tenToThirty3"
-        android:layout_width="200dp"
-        android:layout_height="43dp"
-        android:text="10 - 30 minutes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
 
     <TextView
         android:id="@+id/prepText"
@@ -197,7 +237,7 @@
         app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999" />
+        app:layout_constraintVertical_bias="0.120000005" />
 
     <Button
         android:id="@+id/nextButton"
@@ -208,7 +248,7 @@
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95" />

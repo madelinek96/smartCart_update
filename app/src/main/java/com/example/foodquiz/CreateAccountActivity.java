@@ -68,7 +68,7 @@ public class CreateAccountActivity extends AppCompatActivity{
         fStore = FirebaseFirestore.getInstance();
 
         if(mAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            startActivity(new Intent(getApplicationContext(), QuizWelcomeDisplay.class));
             finish();
         }
 
@@ -125,7 +125,7 @@ public class CreateAccountActivity extends AppCompatActivity{
                                 }
 
                                 progressBar.setVisibility(View.INVISIBLE);
-                                Intent intent = new Intent(CreateAccountActivity.this, HomeActivity.class);
+                                Intent intent = new Intent(CreateAccountActivity.this, QuizWelcomeDisplay.class);
                                 startActivity(intent);
                                 finish();
                             }
@@ -169,7 +169,7 @@ public class CreateAccountActivity extends AppCompatActivity{
     }
     private void sendtoMain(){
             Toast.makeText(CreateAccountActivity.this,"User Created.",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(CreateAccountActivity.this, HomeActivity.class);
+            Intent intent = new Intent(CreateAccountActivity.this, QuizWelcomeDisplay.class);
             startActivity(intent);
             finish();
     }

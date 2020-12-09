@@ -20,4 +20,10 @@
     <item name="twoToThreeTimes2" type="id"></item>
     <item name="neverDairyVegan" type="id"></item>
     <item name="backButton2" type="id"></item>
+    <item name="neverMeatImVegan" type="id"></item>
+    <item name="neverMeatDontLike" type="id"></item>
+    <item name="howOftenMeat" type="id"></item>
+    <item name="backButton" type="id"></item>
+    <item name="radioGroup3" type="id"></item>
+    <item name="radioGroup2" type="id"></item>
 </resources>

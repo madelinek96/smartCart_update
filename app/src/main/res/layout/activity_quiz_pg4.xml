@@ -14,69 +14,70 @@
     tools:context=".QuizActivityDiet">
 
 
-    <CheckBox
-        android:id="@+id/lowCarb"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Low carbohydrates"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
+        <CheckBox
+            android:id="@+id/lowSodium"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Low sodium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.47000003" />
 
-    <CheckBox
-        android:id="@+id/highProtein"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="High protein"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        <CheckBox
+            android:id="@+id/lowCarb"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Low carbohydrates"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.542" />
 
-    <CheckBox
-        android:id="@+id/noPreference"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="No preference"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        <CheckBox
+            android:id="@+id/lowSugar"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Low sugar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.609" />
 
-    <CheckBox
-        android:id="@+id/lowSugar"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Low sugar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.609" />
+        <CheckBox
+            android:id="@+id/highProtein"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="High protein"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.68" />
 
-    <CheckBox
-        android:id="@+id/lowSodium"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Low sodium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47000003" />
+        <CheckBox
+            android:id="@+id/noPreference"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="No preference"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
+
 
 
     <TextView
-        android:id="@+id/section2Preferences"
+        android:id="@+id/section5HealthGoals"
         android:layout_width="202dp"
         android:layout_height="51dp"
         android:text="Section 2: Preferences"
@@ -94,7 +95,7 @@
         android:id="@+id/selectOne"
         android:layout_width="218dp"
         android:layout_height="26dp"
-        android:text="Check all that apply"
+        android:text="Check all that apply."
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +105,7 @@
         app:layout_constraintVertical_bias="0.29000002" />
 
     <TextView
-        android:id="@+id/nutritionalPreferences"
+        android:id="@+id/healthGoals"
         android:layout_width="330dp"
         android:layout_height="84dp"
         android:text="Nutritional Preferences"

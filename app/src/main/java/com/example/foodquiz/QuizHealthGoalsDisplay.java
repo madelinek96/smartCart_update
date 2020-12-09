@@ -10,21 +10,21 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class QuizPreferencesDisplay extends AppCompatActivity {
+public class QuizHealthGoalsDisplay extends AppCompatActivity {
 
-    Button goToSection2;
+    Button goToSection7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quizpreferencesdisplay);
+        setContentView(R.layout.activity_quizhealthgoalsdisplay);
 
-        goToSection2 = findViewById(R.id.tapHereToStart2);
+        goToSection7 = findViewById(R.id.tapHereToStart5);
 
-        goToSection2.setOnClickListener(new View.OnClickListener() {
+        goToSection7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuizPreferencesDisplay.this, QuizActivityPreferences.class);
+                Intent intent = new Intent(QuizHealthGoalsDisplay.this, HealthGoalsActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -44,7 +44,7 @@ public class QuizPreferencesDisplay extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menuexitquiz:
-                startActivity(new Intent(this,HomeActivity.class));
+                startActivity(new Intent(this, HomeActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

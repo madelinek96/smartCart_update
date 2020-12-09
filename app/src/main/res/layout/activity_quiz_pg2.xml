@@ -15,8 +15,9 @@
 
     <TextView
         android:id="@+id/section1Diet"
-        android:layout_width="181dp"
-        android:layout_height="48dp"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="257dp"
         android:text="Section 1: Diet"
         android:textColor="#231F20"
         android:textSize="22sp"
@@ -41,81 +42,99 @@
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.13999999" />
 
-    <RadioButton
-        android:id="@+id/oneToTwoTimes2"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="One to two times per week"
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="273dp"
+        android:layout_height="282dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47000003">
+        app:layout_constraintVertical_bias="0.74">
 
-    </RadioButton>
 
-    <RadioButton
-        android:id="@+id/neverDairyDontLike"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Never - I don't like dairy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
+        <RadioButton
+            android:id="@+id/oneToTwoTimes2"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="One to two times per week"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.47000003" />
 
-    <RadioButton
-        android:id="@+id/neverDairyLactoseInt"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Never - I'm Lactose Intolerant"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
+        <RadioButton
+            android:id="@+id/twoToThreeTimes2"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Two to three times per week"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.542" />
 
-    <RadioButton
-        android:id="@+id/moreThanThreeTimes2"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="More than three times per week"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.609" />
+        <RadioButton
+            android:id="@+id/moreThanThreeTimes2"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="More than three times per week"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.609" />
 
-    <RadioButton
-        android:id="@+id/twoToThreeTimes2"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Two to three times per week"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
 
-    <RadioButton
-        android:id="@+id/neverDairyVegan"
-        android:layout_width="244dp"
-        android:layout_height="43dp"
-        android:text="Never - I'm Vegan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        <RadioButton
+            android:id="@+id/neverDairyVegan"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Never - I'm Vegan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.677" />
+
+        <RadioButton
+            android:id="@+id/neverDairyLactoseInt"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Never - I'm Lactose Intolerant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74" />
+
+        <RadioButton
+            android:id="@+id/neverDairyDontLike"
+            android:layout_width="244dp"
+            android:layout_height="43dp"
+            android:text="Never - I don't like dairy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.808" />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/nextButton"
@@ -156,6 +175,8 @@
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.32" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

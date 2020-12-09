@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient2"
+    android:background="#424E8F"
     tools:context=".FirebaseUIActivity">
 
 
     <ImageView
         android:id="@+id/sclogo"
-        android:layout_width="234dp"
-        android:layout_height="246dp"
+        android:layout_width="212dp"
+        android:layout_height="224dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -98,7 +98,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.68" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -109,7 +109,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="#C88A5B"
+        android:background="#FFD09D"
         android:text="Login"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -141,8 +141,8 @@
         android:id="@+id/createOne"
         android:layout_width="109dp"
         android:layout_height="37dp"
-        android:background="#C88A5B"
-        android:shadowColor="#F1BD8B"
+        android:background="#FFD09D"
+        android:shadowColor="#FFFFFF"
         android:text="Create one"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

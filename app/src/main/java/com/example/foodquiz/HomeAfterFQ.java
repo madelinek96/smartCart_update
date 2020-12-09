@@ -1,50 +1,30 @@
-
 package com.example.foodquiz;
 
+
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import com.firebase.ui.auth.data.model.User;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.auth.FirebaseAuth;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeAfterFQ extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    Button goToWelcomePage;
-
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
 
-        goToWelcomePage = findViewById(R.id.takeFoodQuiz);
 
-        goToWelcomePage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, FoodQuizLoadingScreen.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        setContentView(R.layout.activity_home_after_foodquiz);
+
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -57,15 +37,15 @@ public class HomeActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menuhome:
-                startActivity(new Intent(this,HomeActivity.class));
+                startActivity(new Intent(this,HomeAfterFQ.class));
                 return true;
             case R.id.menumealplan:
                 Toast.makeText(this, "Meal Plan selected", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.menuprofileicon:
-              Intent i = new Intent(this, UserProfile.class);
-              startActivity(i);
-              return true;
+                Intent i = new Intent(this, UserProfile.class);
+                startActivity(i);
+                return true;
             case R.id.menurecipe:
                 Toast.makeText(this, "Recipes selected", Toast.LENGTH_SHORT).show();
                 return true;
@@ -74,7 +54,7 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             case R.id.menulogout:
                 mAuth.signOut();
-                Intent intent = new Intent(HomeActivity.this,LoginActivity.class);
+                Intent intent = new Intent(HomeAfterFQ.this,LoginActivity.class);
                 startActivity(intent);
                 Toast.makeText(this,"You have been successfully logged out.",Toast.LENGTH_LONG).show();
                 finish();

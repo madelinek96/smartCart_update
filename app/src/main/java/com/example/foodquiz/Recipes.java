@@ -5,47 +5,38 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class QuizWelcomeDisplay extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
 
-    Button display;
+public class Recipes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quizwelcomedisplay);
+        //mAuth = FirebaseAuth.getInstance();
+        setContentView(R.layout.activity_recipes);
 
-        display = findViewById(R.id.tapHereToStart);
-
-        display.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(QuizWelcomeDisplay.this, QuizActivityDiet.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
     }
 
-    //showing the menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.foodquizmenu, menu);
+        inflater.inflate(R.menu.recipesearch, menu);
         return true;
     }
-    //menu logic
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menuexitquiz:
-                startActivity(new Intent(this,HomeActivity.class));
+            case R.id.recipesearch:
+                Toast.makeText(this,"Search recipes selected", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.returnhome:
+                startActivity(new Intent(getApplicationContext(), HomeAfterFQ.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -54,4 +45,8 @@ public class QuizWelcomeDisplay extends AppCompatActivity {
     }
 
 }
+
+
+
+
 

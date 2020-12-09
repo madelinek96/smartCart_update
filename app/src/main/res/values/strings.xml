@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">smartCart</string>
+
+    <string-array name="glucosearrays">
+        <item>Daily</item>
+
+    </string-array>
+
+
+
 </resources>

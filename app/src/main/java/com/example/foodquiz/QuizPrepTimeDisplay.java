@@ -2,6 +2,9 @@ package com.example.foodquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,6 +29,26 @@ public class QuizPrepTimeDisplay extends AppCompatActivity {
                 finish();
             }
         });
+
+    }
+
+    //showing the menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.foodquizmenu, menu);
+        return true;
+    }
+    //menu logic
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menuexitquiz:
+                startActivity(new Intent(this,HomeActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
 
     }
 }

@@ -74,7 +74,7 @@ public class EditUserProfile extends AppCompatActivity {
         editName = findViewById(R.id.editProfileName);
         changePassword = findViewById(R.id.btnChangePassword);
         editEmail = findViewById(R.id.editProfileEmail);
-        progressBar = findViewById(R.id.profileProgressBar);
+
         saveProfile = findViewById(R.id.btnEditProfile);
         changePassword = findViewById(R.id.btnChangePassword);
         updateFoodQuiz = findViewById(R.id.btnUpdateFoodQuiz);
@@ -87,7 +87,7 @@ public class EditUserProfile extends AppCompatActivity {
         userID = mAuth.getCurrentUser();
 
 
-        StorageReference profileRef = storageReference.child("users/"+ mAuth.getCurrentUser().getUid());
+        StorageReference profileRef = storageReference.child("gs://smartcart-184ed.appspot.com/users/");
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
@@ -161,7 +161,7 @@ public class EditUserProfile extends AppCompatActivity {
 
     private void uploadImageToFirebase(Uri imageUri){
         //upload image to firebase storage
-        final StorageReference fileRef = storageReference.child("users/" + mAuth.getCurrentUser().getUid());
+        final StorageReference fileRef = storageReference.child("gs://smartcart-184ed.appspot.com/users/");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
