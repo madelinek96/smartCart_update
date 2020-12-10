@@ -17,39 +17,42 @@
         android:scrollbars="vertical">
 
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <TextView
+            android:id="@+id/recipeBox2"
             android:layout_width="132dp"
             android:layout_height="193dp"
+            android:background="#405084"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintVertical_bias="0.060000002"
             app:srcCompat="@drawable/recipebox" />
 
-        <ImageView
-            android:id="@+id/imageView1"
+        <TextView
+            android:id="@+id/recipeBox3"
             android:layout_width="132dp"
             android:layout_height="193dp"
+            android:background="#405084"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintVertical_bias="0.060000002"
             app:srcCompat="@drawable/recipebox" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <TextView
+            android:id="@+id/recipeBox1"
             android:layout_width="132dp"
             android:layout_height="193dp"
+            android:background="#405084"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintVertical_bias="0.060000002"
             app:srcCompat="@drawable/recipebox" />
 
         <TextView
@@ -63,7 +66,31 @@
             app:layout_constraintHorizontal_bias="0.071"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.061" />
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnSeeMoreRecipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.987"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26999998" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32999998" />
 
         <TextView
             android:id="@+id/textView6"
@@ -73,31 +100,7 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.39" />
-
-        <Button
-            android:id="@+id/btnSeeMoreRecipes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="See More"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.984"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.32" />
-
-        <View
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.077"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.37" />
@@ -109,46 +112,55 @@
             android:text="See Full Meal Plan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.984"
+            app:layout_constraintHorizontal_bias="0.954"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.39" />
+            app:layout_constraintVertical_bias="0.37" />
 
-
-        <ImageView
-            android:id="@+id/mealplanbox1"
-            android:layout_width="400dp"
-            android:layout_height="182dp"
+        <TextView
+            android:id="@+id/dinnerMeal"
+            android:layout_width="397dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="80dp"
+            android:background="#405084"
+            android:textColor="#fff"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintHorizontal_bias="0.606"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.53"
-            app:srcCompat="@drawable/mealplanbox" />
+            app:layout_constraintTop_toBottomOf="@+id/lunchMeal"
+            app:layout_constraintVertical_bias="0.77" />
 
-
-        <ImageView
-            android:id="@+id/mealplanbox2"
-            android:layout_width="400dp"
-            android:layout_height="182dp"
-            android:layout_marginTop="8dp"
+        <TextView
+            android:id="@+id/breakfastMeal"
+            android:layout_width="397dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="436dp"
+            android:background="#405084"
+            android:textColor="#fff"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.595"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mealplanbox3"
-            app:srcCompat="@drawable/mealplanbox" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/mealplanbox3"
-            android:layout_width="400dp"
-            android:layout_height="182dp"
-            android:layout_marginTop="8dp"
+        <TextView
+            android:id="@+id/lunchMeal"
+            android:layout_width="397dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="12dp"
+            android:background="#405084"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@id/dinnerMeal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintHorizontal_bias="0.606"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mealplanbox1"
-            app:srcCompat="@drawable/mealplanbox" />
+            app:layout_constraintTop_toBottomOf="@+id/breakfastMeal"
+            app:layout_constraintVertical_bias="0.7" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

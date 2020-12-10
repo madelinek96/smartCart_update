@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foodquiz">
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -12,90 +12,52 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
-        <activity android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity android:name=".HomePageLoadingScreen"
+        <activity
+            android:name=".mealPlan"
+            android:label="@string/title_activity_meal_plan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".HomePageLoadingScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>>
+            </intent-filter>
+            >
         </activity>
-
-        <activity android:name=".LoadingScreen"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity android:name=".HomeActivity">
-        </activity>
-
-        <activity android:name=".UserProfile">
-        </activity>
-
-        <activity android:name=".MainActivity">
-        </activity>
-
-
-        <activity android:name=".CreateAccountActivity">
-        </activity>
-
-        <activity android:name=".EditUserProfile">
-        </activity>
-
-        <activity android:name=".ChangePassword">
-        </activity>
-
-        <activity android:name=".FoodQuizLoadingScreen"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity android:name=".QuizActivityDiet">
-        </activity>
-        <activity android:name=".QuizActivityDiet2">
-        </activity>
-        <activity android:name=".QuizActivityDiet3">
-        </activity>
-        <activity android:name=".QuizWelcomeDisplay">
-        </activity>
-        <activity android:name=".QuizActivityPreferences">
-        </activity>
-
-        <activity android:name=".QuizPreferencesDisplay">
-        </activity>
-
-        <activity android:name=".QuizAvoidsDisplay">
-        </activity>
-
-        <activity android:name=".QuizActivityAvoids">
-        </activity>
-
-        <activity android:name=".QuizPrepTimeDisplay">
-        </activity>
-
-        <activity android:name=".QuizActivityPrepTime">
-        </activity>
-
-        <activity android:name=".QuizResponseActivity">
-        </activity>
-
-        <activity android:name=".HomeAfterFQ">
-        </activity>
-
-        <activity android:name=".QuizHealthGoalsDisplay">
-        </activity>
-
-        <activity android:name=".BudgetActivity">
-        </activity>
-
-        <activity android:name=".QuizBudgetDisplay">
-        </activity>
-
-        <activity android:name=".HealthGoalsActivity">
-        </activity>
+        <activity
+            android:name=".LoadingScreen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".UserProfile"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CreateAccountActivity"></activity>
+        <activity android:name=".EditUserProfile"></activity>
+        <activity android:name=".ChangePassword"></activity>
+        <activity
+            android:name=".FoodQuizLoadingScreen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".QuizActivityDiet"></activity>
+        <activity android:name=".QuizActivityDiet2"></activity>
+        <activity android:name=".QuizActivityDiet3"></activity>
+        <activity android:name=".QuizWelcomeDisplay"></activity>
+        <activity android:name=".QuizActivityPreferences"></activity>
+        <activity android:name=".QuizPreferencesDisplay"></activity>
+        <activity android:name=".QuizAvoidsDisplay"></activity>
+        <activity android:name=".QuizActivityAvoids"></activity>
+        <activity android:name=".QuizPrepTimeDisplay"></activity>
+        <activity android:name=".QuizActivityPrepTime"></activity>
+        <activity android:name=".QuizResponseActivity"></activity>
+        <activity android:name=".HomeAfterFQ"></activity>
+        <activity android:name=".QuizHealthGoalsDisplay"></activity>
+        <activity android:name=".BudgetActivity"></activity>
+        <activity android:name=".QuizBudgetDisplay"></activity>
+        <activity android:name=".HealthGoalsActivity"></activity>
+        <activity android:name=".Recipes"></activity>
 
 
     </application>

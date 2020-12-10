@@ -23,10 +23,6 @@
         android:title="Meal Plan"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/menusubscribe"
-        android:title="Subscribe to Pro"
-        app:showAsAction="never"/>
-
     <item android:id="@+id/menulogout"
         android:title="Log Out"
         app:showAsAction="never"/>

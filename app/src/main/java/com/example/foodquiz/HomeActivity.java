@@ -60,17 +60,14 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(this,HomeActivity.class));
                 return true;
             case R.id.menumealplan:
-                Toast.makeText(this, "Meal Plan selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, mealPlan.class));
                 return true;
             case R.id.menuprofileicon:
               Intent i = new Intent(this, UserProfile.class);
               startActivity(i);
               return true;
             case R.id.menurecipe:
-                Toast.makeText(this, "Recipes selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.menusubscribe:
-                Toast.makeText(this, "Subscribe to Pro selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,Recipes.class));
                 return true;
             case R.id.menulogout:
                 mAuth.signOut();

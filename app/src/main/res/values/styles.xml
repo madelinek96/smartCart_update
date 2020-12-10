@@ -15,4 +15,6 @@
         <item name="colorPrimaryDark">#C88A5B</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
 </resources>

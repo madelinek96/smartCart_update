@@ -1,11 +1,18 @@
 <resources>
     <string name="app_name">smartCart</string>
+    <string name="recipe">Recipe</string>
 
     <string-array name="glucosearrays">
         <item>Daily</item>
 
     </string-array>
-
-
+    <string name="title_activity_meal_plan">mealPlan</string>
+    <string name="monday_tab">Mon</string>
+    <string name="tuesday_tab">Tues</string>
+    <string name="wednesday_tab">Wed</string>
+    <string name="thursday_tab">Thur</string>
+    <string name="friday_tab">Fri</string>
+    <string name="saturday_tab">Sat</string>
+    <string name="sunday_tab">Sun</string>
 
 </resources>

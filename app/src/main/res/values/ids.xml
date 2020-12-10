@@ -26,4 +26,13 @@
     <item name="backButton" type="id"></item>
     <item name="radioGroup3" type="id"></item>
     <item name="radioGroup2" type="id"></item>
+    <item name="showRecipes1" type="id" />
+    <item name="showRecipes" type="id" />
+    <item name="showRecipes2" type="id" />
+    <item name="showRecipes3" type="id" />
+    <item name="showRecipes4" type="id" />
+    <item name="showRecipes5" type="id" />
+    <item name="showRecipesButton" type="id" />
+    <item name="showRecipes6" type="id"></item>
+    <item name="showRecipes7" type="id" />
 </resources>
